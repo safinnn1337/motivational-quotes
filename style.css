@@ -1,0 +1,94 @@
+﻿.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    border-left: 3px solid #7fffd4	;    
+    border-right: 3px solid #7fffd4	;
+    border-top: 3px solid #7fffd4	;
+    background: #f5f5f5;
+    border-bottom: 3px solid #7fffd4 ;
+}
+
+.container h3 {
+    
+    text-align: center; 
+}
+
+
+
+.арт {
+    margin: 0 auto;
+    text-align: center;
+}       
+
+body {
+    background: white;
+    font-family: sans-serif;
+}
+
+.img {
+    text-align: center;
+    border-radius: 26px;
+    margin: 0 auto;
+    left: 50px;
+}
+.img1 {
+    text-align: center;
+    max-width: 100%;
+}
+
+
+@media (max-width: 700px) {
+    .img1 {
+        text-align: center;
+        display: block;
+    }
+}
+
+.section {
+    height: 100vh;
+    background-color: #7b1fa2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    display: block;
+    transition: 0.5s;
+}
+
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+
+
+.menu-btn span::after {
+    transform: translateY(5px);
+}
+
